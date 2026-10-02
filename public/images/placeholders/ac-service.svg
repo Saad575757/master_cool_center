@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Split air conditioner service placeholder">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#0a2455"/>
+      <stop offset="55%" stop-color="#10409b"/>
+      <stop offset="100%" stop-color="#071a3d"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e6ecf5"/>
+    </linearGradient>
+    <linearGradient id="unit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#dde4ee"/>
+    </linearGradient>
+    <linearGradient id="louvre" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9aabc4"/>
+      <stop offset="100%" stop-color="#c3cedd"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef3b4a"/>
+      <stop offset="100%" stop-color="#a30f1c"/>
+    </linearGradient>
+    <linearGradient id="tool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1350c4"/>
+      <stop offset="100%" stop-color="#0a2455"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#sky)"/>
+
+  <!-- wall panel -->
+  <rect x="0" y="360" width="1200" height="540" fill="url(#wall)"/>
+  <g stroke="#cfd9e8" stroke-width="2">
+    <path d="M0 470h1200M0 600h1200M0 730h1200"/>
+    <path d="M300 360v540M700 360v540M1050 360v540"/>
+  </g>
+
+  <!-- indoor split unit -->
+  <g>
+    <rect x="250" y="150" width="700" height="190" rx="34" fill="url(#unit)"/>
+    <rect x="250" y="150" width="700" height="190" rx="34" fill="none" stroke="#b9c6d8" stroke-width="3"/>
+    <rect x="284" y="296" width="632" height="30" rx="15" fill="url(#louvre)"/>
+    <g stroke="#8b9db6" stroke-width="4" stroke-linecap="round">
+      <path d="M330 311v10M400 311v10M470 311v10M540 311v10M610 311v10M680 311v10M750 311v10M820 311v10"/>
+    </g>
+    <circle cx="878" cy="196" r="9" fill="#25D366"/>
+    <rect x="300" y="178" width="120" height="10" rx="5" fill="#dde4ee"/>
+    <rect x="300" y="202" width="76" height="10" rx="5" fill="#dde4ee"/>
+  </g>
+
+  <!-- cold airflow -->
+  <g stroke="#4183ef" stroke-width="9" stroke-linecap="round" opacity="0.5" fill="none">
+    <path d="M370 360c0 46-30 66-30 106"/>
+    <path d="M500 360c0 56 26 78 26 122"/>
+    <path d="M640 360c0 44 32 62 32 100"/>
+    <path d="M770 360c0 58-24 82-24 128"/>
+  </g>
+  <g fill="#7fabf5" opacity="0.35">
+    <circle cx="340" cy="530" r="9"/><circle cx="470" cy="560" r="7"/>
+    <circle cx="610" cy="520" r="8"/><circle cx="740" cy="580" r="10"/>
+    <circle cx="500" cy="640" r="6"/><circle cx="660" cy="660" r="7"/>
+  </g>
+
+  <!-- technician -->
+  <g>
+    <!-- torso -->
+    <path d="M470 900c0-118 46-186 116-186s118 68 118 186z" fill="#122346"/>
+    <path d="M586 714c-8 62-8 122 0 186h-46c-14-70-14-128 0-186z" fill="#0a1830" opacity="0.55"/>
+    <!-- collar -->
+    <path d="M552 716h68l-34 34z" fill="#e01b2d"/>
+    <!-- head -->
+    <circle cx="586" cy="632" r="52" fill="#e8b48c"/>
+    <path d="M534 626a52 52 0 0 1 104 0 60 60 0 0 0-104 0z" fill="#2b1b12"/>
+    <circle cx="586" cy="612" r="52" fill="none" stroke="#122346" stroke-width="0" />
+    <!-- helmet -->
+    <path d="M528 604a58 58 0 0 1 116 0z" fill="url(#accent)"/>
+    <rect x="516" y="602" width="140" height="12" rx="6" fill="#c41424"/>
+    <rect x="628" y="590" width="34" height="26" rx="6" fill="#ef3b4a"/>
+    <!-- raised arm to unit -->
+    <path d="M508 760c-40-16-62-58-58-104 2-24 12-46 24-64" stroke="#122346" stroke-width="40" stroke-linecap="round" fill="none"/>
+    <circle cx="482" cy="586" r="23" fill="#e8b48c"/>
+    <!-- tool -->
+    <g transform="rotate(28 486 566)">
+      <rect x="470" y="498" width="30" height="80" rx="10" fill="url(#tool)"/>
+      <rect x="462" y="470" width="46" height="34" rx="10" fill="#0a1830"/>
+    </g>
+    <!-- other arm -->
+    <path d="M664 762c44-10 66-44 68-84" stroke="#122346" stroke-width="40" stroke-linecap="round" fill="none"/>
+    <circle cx="736" cy="672" r="22" fill="#e8b48c"/>
+  </g>
+
+  <!-- pipe -->
+  <path d="M360 340v18c0 14 12 22 26 22h40" stroke="#c3cedd" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M360 340v18c0 14 12 22 26 22h40" stroke="#9aabc4" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+  <!-- badge -->
+  <g transform="translate(920 640)">
+    <rect width="220" height="128" rx="20" fill="#ffffff" opacity="0.96"/>
+    <rect x="22" y="26" width="10" height="76" rx="5" fill="#e01b2d"/>
+    <rect x="46" y="30" width="120" height="14" rx="7" fill="#0a1830"/>
+    <rect x="46" y="56" width="150" height="10" rx="5" fill="#9aabc4"/>
+    <rect x="46" y="76" width="96" height="10" rx="5" fill="#c3cedd"/>
+  </g>
+</svg>

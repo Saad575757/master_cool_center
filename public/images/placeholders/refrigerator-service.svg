@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Refrigerator compressor repair placeholder">
+  <defs>
+    <linearGradient id="rbg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#0a1830"/>
+      <stop offset="60%" stop-color="#122346"/>
+      <stop offset="100%" stop-color="#071a3d"/>
+    </linearGradient>
+    <linearGradient id="rsteel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8eef6"/>
+      <stop offset="45%" stop-color="#9aabc4"/>
+      <stop offset="100%" stop-color="#47608c"/>
+    </linearGradient>
+    <linearGradient id="rcap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c63e0"/>
+      <stop offset="100%" stop-color="#0a2455"/>
+    </linearGradient>
+    <linearGradient id="raccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef3b4a"/>
+      <stop offset="100%" stop-color="#a30f1c"/>
+    </linearGradient>
+    <radialGradient id="rglow" cx="50%" cy="55%" r="60%">
+      <stop offset="0%" stop-color="#1c63e0" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#1c63e0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#rbg)"/>
+  <rect width="1200" height="900" fill="url(#rglow)"/>
+
+  <g stroke="#ffffff" stroke-opacity="0.045" stroke-width="2">
+    <path d="M0 150h1200M0 340h1200M0 530h1200M0 720h1200"/>
+    <path d="M150 0v900M420 0v900M690 0v900M960 0v900"/>
+  </g>
+
+  <!-- floor -->
+  <rect x="0" y="700" width="1200" height="200" fill="#050d1c" opacity="0.7"/>
+
+  <!-- refrigerator shell (open rear) -->
+  <g>
+    <rect x="150" y="90" width="900" height="620" rx="18" fill="#e6ecf5"/>
+    <rect x="150" y="90" width="900" height="620" rx="18" fill="none" stroke="#b9c6d8" stroke-width="4"/>
+    <rect x="196" y="140" width="808" height="520" rx="10" fill="#cfd9e8"/>
+    <g stroke="#b0bed2" stroke-width="5">
+      <path d="M240 200h720M240 260h720M240 320h720M240 380h720M240 440h720M240 500h720M240 560h720"/>
+    </g>
+    <rect x="150" y="90" width="900" height="46" rx="18" fill="#c3cedd"/>
+  </g>
+
+  <!-- compressor -->
+  <g transform="translate(430 330)">
+    <ellipse cx="170" cy="240" rx="180" ry="34" fill="#050d1c" opacity="0.55"/>
+    <rect x="30" y="60" width="280" height="180" rx="26" fill="url(#rsteel)"/>
+    <rect x="30" y="60" width="280" height="180" rx="26" fill="none" stroke="#6b81a8" stroke-width="3"/>
+    <rect x="66" y="96" width="150" height="14" rx="7" fill="#47608c" opacity="0.6"/>
+    <rect x="66" y="126" width="110" height="14" rx="7" fill="#47608c" opacity="0.45"/>
+    <rect x="66" y="156" width="132" height="14" rx="7" fill="#47608c" opacity="0.35"/>
+    <!-- terminal box -->
+    <rect x="248" y="44" width="76" height="72" rx="10" fill="url(#rcap)"/>
+    <circle cx="286" cy="66" r="8" fill="#7fabf5"/>
+    <circle cx="286" cy="94" r="8" fill="#ef3b4a"/>
+    <!-- feet -->
+    <rect x="66" y="236" width="34" height="26" rx="6" fill="#1b2f52"/>
+    <rect x="240" y="236" width="34" height="26" rx="6" fill="#1b2f52"/>
+    <!-- suction / discharge pipes -->
+    <path d="M62 78V40c0-14 12-24 26-24h44" stroke="#8b9db6" stroke-width="16" stroke-linecap="round" fill="none"/>
+    <path d="M280 196v54c0 14-12 24-26 24h-40" stroke="#6b81a8" stroke-width="16" stroke-linecap="round" fill="none"/>
+    <circle cx="140" cy="16" r="14" fill="#ef3b4a"/>
+  </g>
+
+  <!-- technician -->
+  <g transform="translate(560 300)">
+    <path d="M-30 900c0-134 48-210 124-210s126 76 126 210z" fill="#0a2455"/>
+    <path d="M94 690c-8 68-8 134 0 210h-50c-15-78-15-142 0-210z" fill="#071a3d" opacity="0.55"/>
+    <path d="M58 692h72l-36 36z" fill="#e01b2d"/>
+    <circle cx="94" cy="606" r="52" fill="#e8b48c"/>
+    <path d="M42 602a52 52 0 0 1 104 0 60 60 0 0 0-104 0z" fill="#2b1b12"/>
+    <path d="M36 576a58 58 0 0 1 116 0z" fill="url(#raccent)"/>
+    <rect x="24" y="572" width="140" height="12" rx="6" fill="#c41424"/>
+    <!-- arms working on compressor -->
+    <path d="M20 736c-34-16-52-52-48-96 2-20 8-38 18-54" stroke="#122346" stroke-width="36" stroke-linecap="round" fill="none"/>
+    <circle cx="0" cy="582" r="21" fill="#e8b48c"/>
+    <path d="M168 740c34-12 54-44 56-84" stroke="#122346" stroke-width="36" stroke-linecap="round" fill="none"/>
+    <circle cx="228" cy="652" r="20" fill="#e8b48c"/>
+    <!-- wrench -->
+    <g transform="rotate(-36 6 560)">
+      <rect x="-4" y="500" width="26" height="72" rx="9" fill="#c3cedd"/>
+      <path d="M-4 508a20 20 0 0 0 28 0 20 20 0 0 1 0-14 20 20 0 0 0-28-14z" fill="#9aabc4"/>
+    </g>
+  </g>
+
+  <!-- callout badge -->
+  <g transform="translate(830 96)">
+    <rect width="260" height="104" rx="18" fill="#ffffff" opacity="0.95"/>
+    <rect x="22" y="22" width="10" height="60" rx="5" fill="#e01b2d"/>
+    <rect x="46" y="26" width="150" height="14" rx="7" fill="#0a1830"/>
+    <rect x="46" y="52" width="180" height="10" rx="5" fill="#9aabc4"/>
+    <rect x="46" y="72" width="112" height="10" rx="5" fill="#c3cedd"/>
+  </g>
+</svg>

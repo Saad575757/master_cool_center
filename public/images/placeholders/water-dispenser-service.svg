@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Water dispenser service placeholder">
+  <defs>
+    <linearGradient id="wbg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#f0f6ff"/>
+      <stop offset="55%" stop-color="#dde9fd"/>
+      <stop offset="100%" stop-color="#b9d1fa"/>
+    </linearGradient>
+    <linearGradient id="wbody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#eef3fa"/>
+      <stop offset="100%" stop-color="#c9d6e8"/>
+    </linearGradient>
+    <linearGradient id="wwater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7fabf5"/>
+      <stop offset="100%" stop-color="#1350c4"/>
+    </linearGradient>
+    <linearGradient id="wsteel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8eef6"/>
+      <stop offset="50%" stop-color="#9aabc4"/>
+      <stop offset="100%" stop-color="#47608c"/>
+    </linearGradient>
+    <linearGradient id="waccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef3b4a"/>
+      <stop offset="100%" stop-color="#a30f1c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#wbg)"/>
+
+  <g stroke="#ffffff" stroke-opacity="0.55" stroke-width="2">
+    <path d="M0 180h1200M0 360h1200M0 540h1200M0 720h1200"/>
+    <path d="M200 0v900M500 0v900M800 0v900M1100 0v900"/>
+  </g>
+
+  <!-- floor -->
+  <rect x="0" y="740" width="1200" height="160" fill="#ffffff" opacity="0.65"/>
+  <ellipse cx="600" cy="768" rx="330" ry="42" fill="#0a2455" opacity="0.08"/>
+
+  <!-- dispenser body -->
+  <g transform="translate(340 70)">
+    <rect x="0" y="0" width="520" height="640" rx="26" fill="url(#wbody)"/>
+    <rect x="0" y="0" width="520" height="640" rx="26" fill="none" stroke="#b9c6d8" stroke-width="4"/>
+    <!-- top branding panel -->
+    <rect x="34" y="30" width="452" height="76" rx="14" fill="#0a2455"/>
+    <rect x="60" y="52" width="180" height="14" rx="7" fill="#ffffff"/>
+    <rect x="60" y="76" width="112" height="10" rx="5" fill="#4183ef"/>
+    <circle cx="452" cy="68" r="16" fill="#e01b2d"/>
+    <!-- cooling bay -->
+    <rect x="46" y="140" width="428" height="270" rx="18" fill="#071a3d" opacity="0.92"/>
+    <rect x="46" y="140" width="428" height="270" rx="18" fill="none" stroke="#2b4370" stroke-width="3"/>
+    <!-- bottle -->
+    <path d="M212 172h96v34c0 16 34 34 34 74v112c0 16-14 26-30 26h-104c-16 0-30-10-30-26V280c0-40 34-58 34-74z" fill="url(#wwater)" opacity="0.92"/>
+    <path d="M212 172h96v34c0 16 34 34 34 74v112c0 16-14 26-30 26h-104c-16 0-30-10-30-26V280c0-40 34-58 34-74z" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="4"/>
+    <g stroke="#ffffff" stroke-opacity="0.35" stroke-width="7" stroke-linecap="round">
+      <path d="M212 226h96M196 286h128M188 336h144"/>
+    </g>
+    <!-- taps -->
+    <rect x="140" y="440" width="240" height="26" rx="13" fill="url(#wsteel)"/>
+    <rect x="168" y="466" width="30" height="52" rx="10" fill="#0a2455"/>
+    <rect x="246" y="466" width="30" height="52" rx="10" fill="#a30f1c"/>
+    <!-- drip tray -->
+    <rect x="120" y="524" width="280" height="22" rx="11" fill="#9aabc4"/>
+    <!-- lower vents -->
+    <g stroke="#c3cedd" stroke-width="8" stroke-linecap="round">
+      <path d="M120 588h280M120 612h280"/>
+    </g>
+    <!-- indicator -->
+    <circle cx="452" cy="592" r="10" fill="#25D366"/>
+  </g>
+
+  <!-- technician -->
+  <g transform="translate(60 250)">
+    <path d="M0 900c0-140 52-220 134-220s136 80 136 220z" fill="#0a2455"/>
+    <path d="M134 680c-8 74-8 146 0 220h-54c-16-84-16-154 0-220z" fill="#071a3d" opacity="0.55"/>
+    <path d="M96 682h76l-38 38z" fill="#e01b2d"/>
+    <circle cx="134" cy="592" r="54" fill="#e8b48c"/>
+    <path d="M80 588a54 54 0 0 1 108 0 62 62 0 0 0-108 0z" fill="#2b1b12"/>
+    <path d="M74 560a60 60 0 0 1 120 0z" fill="url(#waccent)"/>
+    <rect x="62" y="556" width="144" height="13" rx="6" fill="#c41424"/>
+    <path d="M58 726c-36-18-56-56-52-102 2-22 10-42 20-58" stroke="#122346" stroke-width="40" stroke-linecap="round" fill="none"/>
+    <circle cx="38" cy="560" r="23" fill="#e8b48c"/>
+    <path d="M212 730c38-14 60-50 62-94" stroke="#122346" stroke-width="40" stroke-linecap="round" fill="none"/>
+    <circle cx="278" cy="630" r="22" fill="#e8b48c"/>
+    <g transform="rotate(30 40 534)">
+      <rect x="26" y="464" width="30" height="86" rx="11" fill="#1c63e0"/>
+      <rect x="16" y="428" width="50" height="42" rx="11" fill="#0a1830"/>
+    </g>
+  </g>
+
+  <!-- coolant loop -->
+  <g stroke="#1c63e0" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.55">
+    <path d="M540 120c-70 0-96 40-96 82v40"/>
+  </g>
+  <g fill="#1350c4" opacity="0.4">
+    <circle cx="960" cy="240" r="11"/><circle cx="1020" cy="360" r="8"/>
+    <circle cx="1060" cy="500" r="10"/><circle cx="980" cy="620" r="7"/>
+  </g>
+</svg>

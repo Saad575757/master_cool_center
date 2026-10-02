@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   MASTER COOL CENTER — Design tokens
+   Brand palette derived from the Master Cool Center flyer: deep navy,
+   service blue, and a red accent for calls to action.
+   ========================================================================== */
+
+@theme {
+  /* Neutrals / surfaces */
+  --color-ink-950: #050d1c;
+  --color-ink-900: #0a1830;
+  --color-ink-800: #122346;
+  --color-ink-700: #1b2f52;
+  --color-ink-600: #2b4370;
+  --color-ink-500: #47608c;
+  /* ink-400 is the muted-text tone: 4.86:1 on white and on --color-canvas,
+     so it clears WCAG AA for small text while staying visually quiet. */
+  --color-ink-400: #5c7299;
+  --color-ink-300: #9aabc4;
+  --color-ink-200: #c3cedd;
+  --color-ink-100: #e0e7f0;
+  --color-ink-50: #f1f5fa;
+
+  --color-brand-950: #071a3d;
+  --color-brand-900: #0a2455;
+  --color-brand-800: #0d3175;
+  --color-brand-700: #10409b;
+  --color-brand-600: #1350c4;
+  --color-brand-500: #1c63e0;
+  --color-brand-400: #4183ef;
+  --color-brand-300: #7fabf5;
+  --color-brand-200: #b9d1fa;
+  --color-brand-100: #dde9fd;
+  --color-brand-50: #f0f6ff;
+
+  --color-accent-700: #a30f1c;
+  --color-accent-600: #c41424;
+  --color-accent-500: #e01b2d;
+  --color-accent-400: #ef3b4a;
+  --color-accent-300: #f8757f;
+  --color-accent-100: #fde3e5;
+
+  --color-canvas: #f6f8fc;
+
+  /* Typography */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Elevation */
+  --shadow-card: 0 1px 2px rgb(10 24 48 / 0.04), 0 8px 24px -12px rgb(10 24 48 / 0.14);
+  --shadow-card-hover: 0 2px 4px rgb(10 24 48 / 0.05),
+    0 24px 48px -20px rgb(10 24 48 / 0.26);
+  --shadow-header: 0 1px 0 rgb(10 24 48 / 0.07), 0 10px 30px -22px rgb(10 24 48 / 0.4);
+
+  /* Motion */
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-fade-up: fade-up 0.7s var(--ease-out-soft) both;
+  --animate-float-slow: float-slow 7s ease-in-out infinite;
+  --animate-pulse-ring: pulse-ring 2.6s ease-out infinite;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.55;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Keeps anchored sections clear of the sticky header. */
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-white);
+    color: var(--color-ink-900);
+    font-family: var(--font-sans);
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    /* Guarantees no horizontal scroll from decorative shapes. */
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+    letter-spacing: -0.021em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Visible, consistent keyboard focus everywhere. */
+  :where(a, button, [tabindex]:not([tabindex="-1"])):focus-visible {
+    outline: 2px solid var(--color-brand-600);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background-color: var(--color-brand-600);
+    color: #fff;
+  }
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+@utility container-page {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 80rem; /* 1280px */
+  padding-inline: 1.25rem;
+
+  @media (width >= 40rem) {
+    padding-inline: 1.75rem;
+  }
+  @media (width >= 64rem) {
+    padding-inline: 2.5rem;
+  }
+}
+
+/* Small uppercase eyebrow label used above every section heading. */
+@utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-brand-700);
+}
+
+/* Subtle dot/grid texture for dark sections. */
+@utility bg-grid-dark {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Soft radial glow used behind hero artwork. */
+@utility bg-glow {
+  background-image: radial-gradient(
+    60% 60% at 50% 40%,
+    rgb(28 99 224 / 0.28) 0%,
+    transparent 70%
+  );
+}
+
+/* Scroll-reveal states, driven by `Reveal` via data attributes. */
+[data-reveal="pending"] {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition:
+    opacity 0.65s var(--ease-out-soft),
+    transform 0.65s var(--ease-out-soft);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+[data-reveal="shown"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* ==========================================================================
+   Reduced motion — kill decorative loops and smooth scrolling
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

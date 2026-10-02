@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="About Master Cool Center service placeholder">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a1830"/>
+      <stop offset="50%" stop-color="#0a2455"/>
+      <stop offset="100%" stop-color="#10409b"/>
+    </linearGradient>
+    <linearGradient id="aunit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#dbe3ee"/>
+    </linearGradient>
+    <linearGradient id="alouvre" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b9db6"/>
+      <stop offset="100%" stop-color="#c3cedd"/>
+    </linearGradient>
+    <linearGradient id="aaccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef3b4a"/>
+      <stop offset="100%" stop-color="#a30f1c"/>
+    </linearGradient>
+    <radialGradient id="aglow" cx="62%" cy="26%" r="62%">
+      <stop offset="0%" stop-color="#1c63e0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1c63e0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#abg)"/>
+  <rect width="1200" height="1500" fill="url(#aglow)"/>
+
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="2">
+    <path d="M0 180h1200M0 400h1200M0 620h1200M0 840h1200M0 1060h1200M0 1280h1200"/>
+    <path d="M180 0v1500M520 0v1500M860 0v1500"/>
+  </g>
+
+  <!-- wall-mounted split unit -->
+  <g transform="translate(90 180)">
+    <rect width="1020" height="240" rx="44" fill="url(#aunit)"/>
+    <rect width="1020" height="240" rx="44" fill="none" stroke="#ffffff" stroke-opacity="0.65" stroke-width="3"/>
+    <rect x="44" y="182" width="932" height="40" rx="20" fill="url(#alouvre)"/>
+    <g stroke="#6b81a8" stroke-width="5" stroke-linecap="round">
+      <path d="M118 202v10M202 202v10M286 202v10M370 202v10M454 202v10M538 202v10M622 202v10M706 202v10M790 202v10M874 202v10"/>
+    </g>
+    <circle cx="936" cy="56" r="12" fill="#25D366"/>
+  </g>
+
+  <!-- technician -->
+  <g transform="translate(300 430)">
+    <path d="M20 1500c0-232 94-368 226-368s228 136 228 368z" fill="#0a2455"/>
+    <path d="M246 1132c-12 122-12 244 0 368h-90c-28-138-28-248 0-368z" fill="#050d1c" opacity="0.5"/>
+    <path d="M156 1136h180l-90 90z" fill="url(#aaccent)"/>
+    <rect x="188" y="1032" width="112" height="116" rx="36" fill="#d99f78"/>
+    <circle cx="244" cy="932" r="118" fill="#e8b48c"/>
+    <circle cx="130" cy="944" r="22" fill="#e8b48c"/>
+    <circle cx="358" cy="944" r="22" fill="#e8b48c"/>
+    <path d="M126 912a118 118 0 0 1 236 0 134 134 0 0 0-236 0z" fill="#241610"/>
+    <path d="M112 900a132 132 0 0 1 264 0z" fill="url(#aaccent)"/>
+    <rect x="94" y="894" width="300" height="26" rx="13" fill="#c41424"/>
+    <rect x="352" y="866" width="72" height="58" rx="13" fill="#ef3b4a"/>
+    <g fill="#3a2418">
+      <rect x="188" y="932" width="38" height="11" rx="5"/>
+      <rect x="262" y="932" width="38" height="11" rx="5"/>
+    </g>
+    <path d="M214 1000q30 22 60 0" stroke="#3a2418" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M170 988a74 74 0 0 0 148 0 100 100 0 0 1-148 0z" fill="#3a2418" opacity="0.3"/>
+    <!-- arms raised to unit -->
+    <path d="M116 1180c-48-20-74-72-70-126 2-24 8-44 18-62" stroke="#122346" stroke-width="46" stroke-linecap="round" fill="none"/>
+    <circle cx="76" cy="984" r="25" fill="#e8b48c"/>
+    <path d="M372 1186c48-16 78-64 80-114" stroke="#122346" stroke-width="46" stroke-linecap="round" fill="none"/>
+    <circle cx="456" cy="1064" r="24" fill="#e8b48c"/>
+    <g transform="rotate(-24 74 958)">
+      <rect x="58" y="864" width="32" height="92" rx="12" fill="#1c63e0"/>
+      <rect x="46" y="826" width="56" height="46" rx="12" fill="#0a1830"/>
+    </g>
+  </g>
+
+  <!-- pipe -->
+  <path d="M150 420v30c0 22 18 32 40 32h70" stroke="#ffffff" stroke-opacity="0.28" stroke-width="18" stroke-linecap="round" fill="none"/>
+</svg>

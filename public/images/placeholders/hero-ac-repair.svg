@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1280" width="1280" height="1280" role="img" aria-label="Air conditioner repair placeholder">
+  <defs>
+    <linearGradient id="hbg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#071a3d"/>
+      <stop offset="50%" stop-color="#0d3175"/>
+      <stop offset="100%" stop-color="#1350c4"/>
+    </linearGradient>
+    <linearGradient id="hunit" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#dbe3ee"/>
+    </linearGradient>
+    <linearGradient id="hlouvre" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b9db6"/>
+      <stop offset="100%" stop-color="#c3cedd"/>
+    </linearGradient>
+    <linearGradient id="haccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef3b4a"/>
+      <stop offset="100%" stop-color="#a30f1c"/>
+    </linearGradient>
+    <linearGradient id="htool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4183ef"/>
+      <stop offset="100%" stop-color="#0a2455"/>
+    </linearGradient>
+    <radialGradient id="hglow" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#4183ef" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#4183ef" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="1280" fill="url(#hbg)"/>
+  <rect width="1280" height="1280" fill="url(#hglow)"/>
+
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="2">
+    <path d="M0 120h1280M0 280h1280M0 440h1280M0 600h1280M0 760h1280M0 920h1280M0 1080h1280"/>
+    <path d="M120 0v1280M360 0v1280M600 0v1280M840 0v1280M1080 0v1280"/>
+  </g>
+
+  <!-- large indoor unit -->
+  <g transform="translate(140 250)">
+    <rect width="1000" height="256" rx="46" fill="url(#hunit)"/>
+    <rect width="1000" height="256" rx="46" fill="none" stroke="#ffffff" stroke-opacity="0.7" stroke-width="3"/>
+    <rect x="46" y="196" width="908" height="42" rx="21" fill="url(#hlouvre)"/>
+    <g stroke="#6b81a8" stroke-width="5" stroke-linecap="round">
+      <path d="M120 217v10M200 217v10M280 217v10M360 217v10M440 217v10M520 217v10M600 217v10M680 217v10M760 217v10M840 217v10M920 217v10"/>
+    </g>
+    <circle cx="912" cy="62" r="12" fill="#25D366"/>
+    <rect x="64" y="44" width="150" height="13" rx="6" fill="#cfd9e8"/>
+    <rect x="64" y="74" width="96" height="13" rx="6" fill="#cfd9e8"/>
+  </g>
+
+  <!-- airflow -->
+  <g stroke="#7fabf5" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.45">
+    <path d="M290 540c0 70-40 100-40 176"/>
+    <path d="M510 540c0 86 34 120 34 200"/>
+    <path d="M740 540c0 66 44 92 44 164"/>
+    <path d="M960 540c0 88-30 124-30 208"/>
+  </g>
+  <g fill="#b9d1fa" opacity="0.3">
+    <circle cx="250" cy="800" r="14"/><circle cx="470" cy="860" r="11"/>
+    <circle cx="700" cy="780" r="13"/><circle cx="900" cy="880" r="15"/>
+    <circle cx="420" cy="960" r="10"/><circle cx="760" cy="1000" r="12"/>
+  </g>
+
+  <!-- technician foreground -->
+  <g transform="translate(0 40)">
+    <path d="M420 1280c0-160 62-252 156-252s158 92 158 252z" fill="#0a1830"/>
+    <path d="M576 1028c-10 84-10 166 0 252h-62c-19-94-19-172 0-252z" fill="#050d1c" opacity="0.6"/>
+    <path d="M532 1030h88l-44 44z" fill="#e01b2d"/>
+    <circle cx="576" cy="906" r="68" fill="#e8b48c"/>
+    <path d="M508 900a68 68 0 0 1 136 0 78 78 0 0 0-136 0z" fill="#2b1b12"/>
+    <path d="M500 866a76 76 0 0 1 152 0z" fill="url(#haccent)"/>
+    <rect x="484" y="862" width="184" height="16" rx="8" fill="#c41424"/>
+    <rect x="628" y="846" width="46" height="34" rx="8" fill="#ef3b4a"/>
+    <path d="M466 1090c-54-22-84-78-78-140 4-32 16-62 32-86" stroke="#122346" stroke-width="54" stroke-linecap="round" fill="none"/>
+    <circle cx="432" cy="852" r="30" fill="#e8b48c"/>
+    <g transform="rotate(24 436 826)">
+      <rect x="418" y="736" width="40" height="104" rx="13" fill="url(#htool)"/>
+      <rect x="406" y="700" width="64" height="46" rx="13" fill="#071a3d"/>
+    </g>
+    <path d="M700 1094c58-14 88-58 90-112" stroke="#122346" stroke-width="54" stroke-linecap="round" fill="none"/>
+    <circle cx="792" cy="976" r="29" fill="#e8b48c"/>
+  </g>
+
+  <!-- pipe -->
+  <path d="M330 506v26c0 20 16 30 36 30h58" stroke="#9aabc4" stroke-width="18" stroke-linecap="round" fill="none" opacity="0.55"/>
+</svg>

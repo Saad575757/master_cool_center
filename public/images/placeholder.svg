@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Master Cool Center service image placeholder">
+  <defs>
+    <linearGradient id="pb" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#0a2455"/>
+      <stop offset="55%" stop-color="#10409b"/>
+      <stop offset="100%" stop-color="#071a3d"/>
+    </linearGradient>
+    <linearGradient id="pu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#dbe3ee"/>
+    </linearGradient>
+    <linearGradient id="pl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b9db6"/>
+      <stop offset="100%" stop-color="#c3cedd"/>
+    </linearGradient>
+    <radialGradient id="pg" cx="50%" cy="34%" r="58%">
+      <stop offset="0%" stop-color="#4183ef" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4183ef" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#pb)"/>
+  <rect width="1200" height="900" fill="url(#pg)"/>
+
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="2">
+    <path d="M0 150h1200M0 340h1200M0 530h1200M0 720h1200"/>
+    <path d="M170 0v900M500 0v900M830 0v900"/>
+  </g>
+
+  <!-- split AC indoor unit -->
+  <g transform="translate(230 250)">
+    <rect width="740" height="200" rx="40" fill="url(#pu)"/>
+    <rect x="40" y="152" width="660" height="34" rx="17" fill="url(#pl)"/>
+    <g stroke="#6b81a8" stroke-width="4" stroke-linecap="round">
+      <path d="M110 169v9M190 169v9M270 169v9M350 169v9M430 169v9M510 169v9M590 169v9M670 169v9"/>
+    </g>
+    <circle cx="676" cy="52" r="11" fill="#25D366"/>
+    <rect x="58" y="36" width="150" height="12" rx="6" fill="#cfd9e8"/>
+    <rect x="58" y="60" width="96" height="12" rx="6" fill="#cfd9e8"/>
+  </g>
+
+  <!-- airflow -->
+  <g stroke="#7fabf5" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.4">
+    <path d="M400 470c0 56-32 80-32 134"/>
+    <path d="M600 470c0 68 26 94 26 156"/>
+    <path d="M800 470c0 52 34 74 34 126"/>
+  </g>
+
+  <!-- snowflake mark -->
+  <g transform="translate(600 690)" stroke="#ffffff" stroke-opacity="0.9" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M0-52v104M-45-26 45 26M45-26-45 26"/>
+    <path d="M0-70v18M0 52v18M-60-35  -46-27M46 27l14 8M60-35 46-27M-46 27l-14 8" stroke-width="6"/>
+    <circle cx="0" cy="0" r="8" fill="#e01b2d" stroke="none"/>
+  </g>
+</svg>
